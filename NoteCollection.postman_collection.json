@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "ad0ef056-d699-42ea-a562-11b4acbfff08",
+		"name": "NoteCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Lina\",\r\n    \"email\": \"lina@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"c_password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "intense-harbor-73044.herokuapp.com/api/register",
+					"host": [
+						"intense-harbor-73044",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"lina@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "intense-harbor-73044.herokuapp.com/api/login",
+					"host": [
+						"intense-harbor-73044",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Notes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDZjOTNmZmExOGJmZDAyNjQwZTNjYzEzZWMyOTM5NjcxZWZhZTc2OTYwYWRiZWMwOTA0YTRiMGU0OTE1ZDdiMGFiMzE2ZGI0YTc3ZGExZDYiLCJpYXQiOiIxNjA3OTc0NDg4LjY1NDQ0MCIsIm5iZiI6IjE2MDc5NzQ0ODguNjU0NDQzIiwiZXhwIjoiMTYzOTUxMDQ4OC42NDkzOTMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.WW00CW0qUoYBd4zN55NRvp8_c0lixDy_3PdkU64ljJvpNaP3MZOmEuWrGrVU-JCuz0NaLtlkJXOsCPntFoc1yfxb8WSlD4B6TixRaVcY4UOrdeKEWSuzyEOhlMvW9FlXt0EdhkjzDr2Hb7UoZ_cU3OCbhxRfA8V5QhjOiUogu3CsIZgKzVCxm5nGD3CZhmGZ4p26uMQj7fbQeIRlZv_HW1YNuLLSs0_uH9U_YaNwYRQeTu0vo5DZAx0_qU4JrOUI2DIcVVrP6MQB-v4NFAt626EE2SC-0Mo8z1jYFhEkOXcj2Nxr2DcG0aaH9d_cEPuE83oHEabPFoi-HamWzrVfyhcgQQqy7LNe6pnSLxRbckkNFKWH05epTlRitUlXyik-zyErmO_OoVCD7keZVW0tCv8ur0fnpoRo8eTtdkYJ88fiYhxtxoQE6PinojYqbXL796NoFq6ePfhsYxWEmOrFzW3Og7r-xuQMprjiZXFxJkR_aE9wNldRCtcE_uT1agAoXW-gRMliXqlYBHc_Uf3zbE_iZvMS6OZFmVdLkHhUteqptYCzGCdnEmKcsEqKcTnq3FJQW8-VkPu4ksOLg48UWZYG46OTaDVTVs6Y40ze6UNzxS2u7OcQEoR9uh1ee3AJaKNz5Bn8iOmCULyilQEaevJDhBs1zDy7GGc1R1mDwS8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "intense-harbor-73044.herokuapp.com/api/Notes",
+					"host": [
+						"intense-harbor-73044",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"Notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Note",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDZjOTNmZmExOGJmZDAyNjQwZTNjYzEzZWMyOTM5NjcxZWZhZTc2OTYwYWRiZWMwOTA0YTRiMGU0OTE1ZDdiMGFiMzE2ZGI0YTc3ZGExZDYiLCJpYXQiOiIxNjA3OTc0NDg4LjY1NDQ0MCIsIm5iZiI6IjE2MDc5NzQ0ODguNjU0NDQzIiwiZXhwIjoiMTYzOTUxMDQ4OC42NDkzOTMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.WW00CW0qUoYBd4zN55NRvp8_c0lixDy_3PdkU64ljJvpNaP3MZOmEuWrGrVU-JCuz0NaLtlkJXOsCPntFoc1yfxb8WSlD4B6TixRaVcY4UOrdeKEWSuzyEOhlMvW9FlXt0EdhkjzDr2Hb7UoZ_cU3OCbhxRfA8V5QhjOiUogu3CsIZgKzVCxm5nGD3CZhmGZ4p26uMQj7fbQeIRlZv_HW1YNuLLSs0_uH9U_YaNwYRQeTu0vo5DZAx0_qU4JrOUI2DIcVVrP6MQB-v4NFAt626EE2SC-0Mo8z1jYFhEkOXcj2Nxr2DcG0aaH9d_cEPuE83oHEabPFoi-HamWzrVfyhcgQQqy7LNe6pnSLxRbckkNFKWH05epTlRitUlXyik-zyErmO_OoVCD7keZVW0tCv8ur0fnpoRo8eTtdkYJ88fiYhxtxoQE6PinojYqbXL796NoFq6ePfhsYxWEmOrFzW3Og7r-xuQMprjiZXFxJkR_aE9wNldRCtcE_uT1agAoXW-gRMliXqlYBHc_Uf3zbE_iZvMS6OZFmVdLkHhUteqptYCzGCdnEmKcsEqKcTnq3FJQW8-VkPu4ksOLg48UWZYG46OTaDVTVs6Y40ze6UNzxS2u7OcQEoR9uh1ee3AJaKNz5Bn8iOmCULyilQEaevJDhBs1zDy7GGc1R1mDwS8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Note 1\",\r\n    \"content\": \"Note 1 Content\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "intense-harbor-73044.herokuapp.com/api/Notes",
+					"host": [
+						"intense-harbor-73044",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"Notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Note",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDZjOTNmZmExOGJmZDAyNjQwZTNjYzEzZWMyOTM5NjcxZWZhZTc2OTYwYWRiZWMwOTA0YTRiMGU0OTE1ZDdiMGFiMzE2ZGI0YTc3ZGExZDYiLCJpYXQiOiIxNjA3OTc0NDg4LjY1NDQ0MCIsIm5iZiI6IjE2MDc5NzQ0ODguNjU0NDQzIiwiZXhwIjoiMTYzOTUxMDQ4OC42NDkzOTMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.WW00CW0qUoYBd4zN55NRvp8_c0lixDy_3PdkU64ljJvpNaP3MZOmEuWrGrVU-JCuz0NaLtlkJXOsCPntFoc1yfxb8WSlD4B6TixRaVcY4UOrdeKEWSuzyEOhlMvW9FlXt0EdhkjzDr2Hb7UoZ_cU3OCbhxRfA8V5QhjOiUogu3CsIZgKzVCxm5nGD3CZhmGZ4p26uMQj7fbQeIRlZv_HW1YNuLLSs0_uH9U_YaNwYRQeTu0vo5DZAx0_qU4JrOUI2DIcVVrP6MQB-v4NFAt626EE2SC-0Mo8z1jYFhEkOXcj2Nxr2DcG0aaH9d_cEPuE83oHEabPFoi-HamWzrVfyhcgQQqy7LNe6pnSLxRbckkNFKWH05epTlRitUlXyik-zyErmO_OoVCD7keZVW0tCv8ur0fnpoRo8eTtdkYJ88fiYhxtxoQE6PinojYqbXL796NoFq6ePfhsYxWEmOrFzW3Og7r-xuQMprjiZXFxJkR_aE9wNldRCtcE_uT1agAoXW-gRMliXqlYBHc_Uf3zbE_iZvMS6OZFmVdLkHhUteqptYCzGCdnEmKcsEqKcTnq3FJQW8-VkPu4ksOLg48UWZYG46OTaDVTVs6Y40ze6UNzxS2u7OcQEoR9uh1ee3AJaKNz5Bn8iOmCULyilQEaevJDhBs1zDy7GGc1R1mDwS8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "intense-harbor-73044.herokuapp.com/api/Notes/1",
+					"host": [
+						"intense-harbor-73044",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"Notes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Note",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDZjOTNmZmExOGJmZDAyNjQwZTNjYzEzZWMyOTM5NjcxZWZhZTc2OTYwYWRiZWMwOTA0YTRiMGU0OTE1ZDdiMGFiMzE2ZGI0YTc3ZGExZDYiLCJpYXQiOiIxNjA3OTc0NDg4LjY1NDQ0MCIsIm5iZiI6IjE2MDc5NzQ0ODguNjU0NDQzIiwiZXhwIjoiMTYzOTUxMDQ4OC42NDkzOTMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.WW00CW0qUoYBd4zN55NRvp8_c0lixDy_3PdkU64ljJvpNaP3MZOmEuWrGrVU-JCuz0NaLtlkJXOsCPntFoc1yfxb8WSlD4B6TixRaVcY4UOrdeKEWSuzyEOhlMvW9FlXt0EdhkjzDr2Hb7UoZ_cU3OCbhxRfA8V5QhjOiUogu3CsIZgKzVCxm5nGD3CZhmGZ4p26uMQj7fbQeIRlZv_HW1YNuLLSs0_uH9U_YaNwYRQeTu0vo5DZAx0_qU4JrOUI2DIcVVrP6MQB-v4NFAt626EE2SC-0Mo8z1jYFhEkOXcj2Nxr2DcG0aaH9d_cEPuE83oHEabPFoi-HamWzrVfyhcgQQqy7LNe6pnSLxRbckkNFKWH05epTlRitUlXyik-zyErmO_OoVCD7keZVW0tCv8ur0fnpoRo8eTtdkYJ88fiYhxtxoQE6PinojYqbXL796NoFq6ePfhsYxWEmOrFzW3Og7r-xuQMprjiZXFxJkR_aE9wNldRCtcE_uT1agAoXW-gRMliXqlYBHc_Uf3zbE_iZvMS6OZFmVdLkHhUteqptYCzGCdnEmKcsEqKcTnq3FJQW8-VkPu4ksOLg48UWZYG46OTaDVTVs6Y40ze6UNzxS2u7OcQEoR9uh1ee3AJaKNz5Bn8iOmCULyilQEaevJDhBs1zDy7GGc1R1mDwS8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Note 1 update\",\r\n    \"content\": \"Not 1 content after update\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "intense-harbor-73044.herokuapp.com/api/Notes/1",
+					"host": [
+						"intense-harbor-73044",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"Notes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Note",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDZjOTNmZmExOGJmZDAyNjQwZTNjYzEzZWMyOTM5NjcxZWZhZTc2OTYwYWRiZWMwOTA0YTRiMGU0OTE1ZDdiMGFiMzE2ZGI0YTc3ZGExZDYiLCJpYXQiOiIxNjA3OTc0NDg4LjY1NDQ0MCIsIm5iZiI6IjE2MDc5NzQ0ODguNjU0NDQzIiwiZXhwIjoiMTYzOTUxMDQ4OC42NDkzOTMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.WW00CW0qUoYBd4zN55NRvp8_c0lixDy_3PdkU64ljJvpNaP3MZOmEuWrGrVU-JCuz0NaLtlkJXOsCPntFoc1yfxb8WSlD4B6TixRaVcY4UOrdeKEWSuzyEOhlMvW9FlXt0EdhkjzDr2Hb7UoZ_cU3OCbhxRfA8V5QhjOiUogu3CsIZgKzVCxm5nGD3CZhmGZ4p26uMQj7fbQeIRlZv_HW1YNuLLSs0_uH9U_YaNwYRQeTu0vo5DZAx0_qU4JrOUI2DIcVVrP6MQB-v4NFAt626EE2SC-0Mo8z1jYFhEkOXcj2Nxr2DcG0aaH9d_cEPuE83oHEabPFoi-HamWzrVfyhcgQQqy7LNe6pnSLxRbckkNFKWH05epTlRitUlXyik-zyErmO_OoVCD7keZVW0tCv8ur0fnpoRo8eTtdkYJ88fiYhxtxoQE6PinojYqbXL796NoFq6ePfhsYxWEmOrFzW3Og7r-xuQMprjiZXFxJkR_aE9wNldRCtcE_uT1agAoXW-gRMliXqlYBHc_Uf3zbE_iZvMS6OZFmVdLkHhUteqptYCzGCdnEmKcsEqKcTnq3FJQW8-VkPu4ksOLg48UWZYG46OTaDVTVs6Y40ze6UNzxS2u7OcQEoR9uh1ee3AJaKNz5Bn8iOmCULyilQEaevJDhBs1zDy7GGc1R1mDwS8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "intense-harbor-73044.herokuapp.com/api/Notes/4",
+					"host": [
+						"intense-harbor-73044",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"Notes",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
